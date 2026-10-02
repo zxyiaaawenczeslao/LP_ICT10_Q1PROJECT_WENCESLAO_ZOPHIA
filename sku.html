@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Lash Studio SKU Generator</title>
+
+        <link rel="stylesheet"
+              href="https://pyscript.net/releases/2024.6.1/core.css">
+
+        <script type="module"
+                src="https://pyscript.net/releases/2024.6.1/core.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+</html>
+
+<body>
+    <nav class="navbar">
+        
+        <div class="brand">
+            LASH STUDIO
+        </div>
+
+        <div>
+            <a href="index.html">Receipt</a>
+            <a href="sku.html">SKU Generator</a>
+        </div>
+    </nav>
+
+    <main class="page">
+
+        <div class="container">
+
+            <section class="card">
+
+                <div class="card-header">
+                    <h1> SKU Generator</h1>
+                    <p> Create a code for your lash products</p>
+                </div>
+
+                <div class="card-body">
+
+                    <label for="category">
+                        ✦ Category
+                    </label>
+
+                    <select id="category">
+                        <option value="Classic">
+                            Classic
+                        </option>
+                        <option value="Doll Eye">
+                            Doll Eye
+                        </option>
+                        <option value="Wispy">
+                            Wispy
+                        </option>
+                         <option value="Natural">
+                            Natural
+                        </option>
+                        <option value="Hybrid">
+                            Hybrid
+                        </option>
+            
+                    </select>
+                    <label for="product_name">
+                        ✦ Product Name
+                    </label>
+                    <input 
+                    type="text"
+                    id="product_name"
+                    placeholder="e.g. Classic Lash Set">
+                    <label for="quantity">
+                        ✦ Stock Quantity
+                    </label>
+                    <input
+                    type="number"
+                    id="quantity"
+            min="0"
+            placeholder="e.g. 25">
+            <button py click="SKU_generator">
+            Generate SKU
+                </button>
+                <div id="sku_output" class="output">
+                    Your SKU will appear here.
+                </div>
+            </section>
+            </div>
+    </main>
+
+    <script type="py" src="./main.py"></script>
+    </body>
+    </html>
+                           

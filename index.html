@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lumé Lash Receipt</title>
+
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2024.6.1/core.css">
+
+    <script type="module"
+            src="https://pyscript.net/releases/2024.6.1/core.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Lash Studio</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="brand">
+            LUMÉ LASH
+        </div>
+
+        <div>
+            <a href="index.html">Receipt</a>
+            <a href="sku.html">SKU Generator</a>
+        </div>
+    </nav>
+
+   <main class="page">
+
+<div class="container">
+
+<section class="container">
+
+<div class="card-header">
+    <h1> LUMÉ LASH </h1>
+    <p> Premuim Lash Collection</p>
+</div>
+
+<div class="card-body">
+
+                    <div class="menu-title">
+                        ✦ Lash Collection
+                    </div>
+
+
+                    <div class="item">
+                        <div class="item-left">
+                            <input type="checkbox" id="item1" value="150">
+                            <span>Classic Lash Set</span>
+                        </div>
+
+                        <span class="price">₱150</span>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="item-left">
+                            <input type="checkbox" id="item2" value="130">
+                            <span>Natural Lash Set</span>
+                        </div>
+
+                        <span class="price">₱130</span>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="item-left">
+                            <input type="checkbox" id="item3" value="160">
+                            <span>Cat Eye Lash Set</span>
+                        </div>
+
+                        <span class="price">₱160</span>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="item-left">
+                            <input type="checkbox" id="item4" value="155">
+                            <span>Doll Eye Lash Set</span>
+                        </div>
+
+                        <span class="price">₱155</span>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="item-left">
+                            <input type="checkbox" id="item5" value="170">
+                            <span>Wispy Lash Set</span>
+                        </div>
+
+                        <span class="price">₱170</span>
+                    </div>
+                    
+      <button py-click="create_order">
+            ✦ Create Receipt
+        </button>
+
+
+        <div id="show" class="output">
+     Your receipt will appear here.
+       </div>
+
+      </div>
+  </section>
+  </div>
+
+  </main>
+
+  <script type="py" src="./main.py"></script>
+</body>
+</html>
